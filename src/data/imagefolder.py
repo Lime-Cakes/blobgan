@@ -63,5 +63,6 @@ class ImageFolderDataModule(LightningDataModule):
         return self._get_dataloader('test')
 
     def _get_dataloader(self, split: str):
-        print(self.dataloader)
+        print_once("About to hit error""
+        print_once(self.dataloader)
         return DataLoader(self.data[split], **self.dataloader)
