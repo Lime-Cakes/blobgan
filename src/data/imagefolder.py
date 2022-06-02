@@ -63,4 +63,5 @@ class ImageFolderDataModule(LightningDataModule):
         return self._get_dataloader('test')
 
     def _get_dataloader(self, split: str):
+        print(self.dataloader)
         return DataLoader(self.data[split], **self.dataloader)
